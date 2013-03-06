@@ -1,6 +1,6 @@
 require 'rubygems'  
 require 'sinatra'
-require 'slim'
+require 'thin'
 
 get '/' do
   slim :index
