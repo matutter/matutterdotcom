@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matutterdotcom</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="nav">
+	<a class="highlight" href="javascript:void(0);">Home</a> 
+	<a href="javascript:void(0);">About</a> 
+	<a href="javascript:void(0);">Code</a> 
+	<a href="javascript:void(0);">Portfolio</a> 
+	<a href="javascript:void(0);">Contact</a>
+</div>
+
+
+<h1> Home#index of @matutter </h1>
+<p>iam @app/views/index.erb</p>
+
+<%= yield %>
+
+</body>
+</html>

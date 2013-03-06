@@ -1,0 +1,5 @@
+Matutterdotcom::Application.routes.draw do
+  get "home/index"
+end
+
+match '/', :to =>'home#index'
