@@ -1,18 +1,3 @@
-
-__END__
-@@layout
-doctype html
-html
-  head
-    meta charset="utf-8"
-    title Just Do It
-    link rel="stylesheet" media="screen, projection" href="/styles.css"
-    /[if lt IE 9]
-      script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"
-  body == yield
-@@index
-
-
 <div class="nav">
 	<a class="highlight" href="javascript:void(0);">Home</a> 
 	<a href="javascript:void(0);">About</a> 
