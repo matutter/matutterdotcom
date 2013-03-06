@@ -1,0 +1,11 @@
+in #views
+
+<form action="/search" method="post">  
+  <input type="text" name="message">  
+  <input type="submit">  
+</form>
+
+post '/search' do  
+  "Search for: '#{params[:message]}'"  
+end 
+ 
