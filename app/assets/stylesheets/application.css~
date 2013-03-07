@@ -1,4 +1,5 @@
 h3 {
+	text-transform:uppercase;
 	color:#FEFEFE;
 	position: absolute;
 	top: -25px;
