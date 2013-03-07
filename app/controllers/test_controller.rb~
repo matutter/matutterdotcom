@@ -1,0 +1,4 @@
+class TestController < ApplicationController do
+  def test
+  end
+end

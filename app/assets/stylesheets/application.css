@@ -1,78 +1,80 @@
-
-/* =================
-
-	Author: Abhimanyu Rana
-  URI: http://www.planetabhi.com
-	Twitter: @planetabhi
-	Dribbble: @planetabhi
-/**************************************************************************/
-/* NAV BAR */
-
-h1 {
-	color:#f6f6f6
+h3 {
+	color:#FEFEFE;
+	position: absolute;
+	top: -25px;
+	left: 80px;
+	font-weight:bold;
+	font: 1.8em/1.8em "helvetica", arial, verdana, sans-serif;
+	}
+h35
+	{
+	color:#292929;
+	position: absolute;
+	top: 4px;
+	left: 190px;
+	font-weight:bold;
+	font: 1.8em/1.8em "helvetica", arial, verdana, sans-serif;
 }
-h2 {
-	color:#f6f6f6
-}
+
 p {
-	color:#f6f6f6
-}
-
-body {
-	background-color:#2b2b2b;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 62.5%
-}
-.nav {
 	
 }
-.nav a {
-	background: -moz-linear-gradient(center top, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.34) 100%) repeat scroll 0 0 transparent;
-	border: 1px solid #121212;
-	border-right: none;
-	box-shadow: 0 2px 3px rgba(255, 255, 255, 0.05) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
-	color: #777777;
-	cursor: pointer;
-	font-size: 14px;
-	line-height: 21px;
-	margin-left: -3px;
-	padding: 12px 20px;
-	text-decoration: none;
-	text-shadow: 0 -1px #0F0F0F;
-	vertical-align: top;
-    -webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-	outline: none
+
+#header { 
+	position: absolute; 
+	top: 0px;
+	left: 0px;
+	background:transparent url("bg-header.png") 0 0 repeat-x;
+	border-bottom:1px solid #353939;
+	width:100%;
+	padding: 10px 0;
+	height:38px;
+	z-index:1;
+	}
+
+	#header a {
+		position: absolute;
+		top: 25px;
+		right: 80px;
+		font-weight:bold;
+		text-transform:uppercase;
+		border-bottom:none !important;
+		border-bottom:none;
+		text-decoration:none;
+		color: #5e9efe;
+		
+		width:7em;
+		padding:0 0 0 18px;
+		font: 1.0em/1.0em "helvetica", arial, verdana, sans-serif;
+		}
+
+body {
+	background: #050707 url("bg-body.jpg") repeat-x 0 0;
+	background-attachment: fixed;
+	}
+
+#container
+{
+	margin-top:59px;
+	height: 200px;
+	width: auto;
+	background-color: #AAAAAA;
+	
 
 }
-.nav a:hover {
-	color:#f6f6f6
-}
-.nav a:first-child {
-	border-radius: 6px 0 0 6px
-}
-.nav a:last-child {
-	border-radius: 0 6px 6px 0
-}
-.nav a:active {
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 rgba(255, 255, 255, 0.1)
-}
-.nav a.highlight {
-	background: -moz-linear-gradient(center top, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.44) 100%) repeat scroll 0 0 transparent;
-	color: #f6f6f6
-}
 
-.nav a:last-child {
-	border-right: 1px solid #121212;
-}
-/**************************************************************************/
-/* NAV BAR */
+/*	
+	#about h1 {
+		display:block;
+		height:357px;
+		width:763px;
+		background:transparent url(../images/interface/hdr-main.gif) 0 0 no-repeat;
+		text-indent:-5000px;
+		margin-bottom:40px;
+		}
+		
+		#about h1.error {
+			background:transparent url(../images/interface/hdr-404.gif) 0 0 no-repeat;
+			height:129px;
+			}
+*/

@@ -1,13 +1,80 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+h3 {
+	color:#FEFEFE;
+	position: absolute;
+	top: -25px;
+	left: 80px;
+	font-weight:bold;
+	font: 1.8em/1.8em "helvetica", arial, verdana, sans-serif;
+	}
+h35
+	{
+	color:#292929;
+	position: absolute;
+	top: 4px;
+	left: 190px;
+	font-weight:bold;
+	font: 1.8em/1.8em "helvetica", arial, verdana, sans-serif;
+}
+
+p {
+	
+}
+
+#header { 
+	position: absolute; 
+	top: 0px;
+	left: 0px;
+	background:transparent url("bg-header.png") 0 0 repeat-x;
+	border-bottom:1px solid #353939;
+	width:100%;
+	padding: 10px 0;
+	height:38px;
+	z-index:1;
+	}
+
+	#header a {
+		position: absolute;
+		top: 25px;
+		right: 80px;
+		font-weight:bold;
+		text-transform:uppercase;
+		border-bottom:none !important;
+		border-bottom:none;
+		text-decoration:none;
+		color: #5e9efe;
+		
+		width:7em;
+		padding:0 0 0 18px;
+		font: 1.0em/1.0em "helvetica", arial, verdana, sans-serif;
+		}
+
+body {
+	background: #050707 url("bg-body.jpg") repeat-x 0 0;
+	background-attachment: fixed;
+	}
+
+#container
+{
+	margin-top:59px;
+	height: 250px;
+	width: auto;
+	background-color: #AAAAAA;
+	
+
+}
+
+/*	
+	#about h1 {
+		display:block;
+		height:357px;
+		width:763px;
+		background:transparent url(../images/interface/hdr-main.gif) 0 0 no-repeat;
+		text-indent:-5000px;
+		margin-bottom:40px;
+		}
+		
+		#about h1.error {
+			background:transparent url(../images/interface/hdr-404.gif) 0 0 no-repeat;
+			height:129px;
+			}
+*/

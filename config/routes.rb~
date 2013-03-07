@@ -1,5 +1,6 @@
 Matutterdotcom::Application.routes.draw do
   get "home/index"
+	match '/', :to =>'home#index'
+	get "home/test"
+	match '/', :to =>'home#test'
 end
-
-match '/', :to =>'home#index'
