@@ -56,7 +56,7 @@ body {
 #container
 {
 	margin-top:59px;
-	height: 250px;
+	height: 200px;
 	width: auto;
 	background-color: #AAAAAA;
 	
