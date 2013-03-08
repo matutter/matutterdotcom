@@ -1,5 +1,4 @@
 h3 {
-	text-transform:uppercase;
 	color:#FEFEFE;
 	position: absolute;
 	top: -25px;
@@ -7,17 +6,28 @@ h3 {
 	font-weight:bold;
 	font: 1.8em/1.8em "helvetica", arial, verdana, sans-serif;
 	}
-h35
-	{
-	color:#292929;
-	position: absolute;
-	top: 4px;
-	left: 190px;
-	font-weight:bold;
-	font: 1.8em/1.8em "helvetica", arial, verdana, sans-serif;
-}
 
 p {
+	
+}
+
+body {
+	width: 82%;
+	margin-left: 9%;
+	background-image: url("back.jpg");
+}
+
+#center {
+	width:80%;
+	margin-left: 10%;
+}
+
+#center left {
+	float:left;
+	
+}
+#center right {
+	float:right;
 	
 }
 
@@ -33,35 +43,28 @@ p {
 	z-index:1;
 	}
 
-	#header a {
-		position: absolute;
-		top: 25px;
-		right: 80px;
-		font-weight:bold;
-		text-transform:uppercase;
+
+
+/*
+#header a {
+		position: relative;
 		border-bottom:none !important;
 		border-bottom:none;
-		text-decoration:none;
-		color: #5e9efe;
-		
-		width:7em;
-		padding:0 0 0 18px;
-		font: 1.0em/1.0em "helvetica", arial, verdana, sans-serif;
 		}
 
 body {
 	background: #050707 url("bg-body.jpg") repeat-x 0 0;
 	background-attachment: fixed;
 	}
-
+*/
 #container
 {
-	margin-top:59px;
+	margin-top:70px;
 	height: 200px;
 	width: auto;
-	background-color: #AAAAAA;
-	
-
+	background-color: rgba(0,0,0,0.5);
+	font: 0.8em/0.8em "helvetica", arial, verdana, sans-serif;
+	color: rgba(255,255,255,1)
 }
 
 /*	

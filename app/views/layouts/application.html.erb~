@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Mat Utter</title>
+	<title>mat utter.com</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>
-			mat utter.com
-		</title>
-	</head>
-	<body>
-<div id="wrapper">
-	<div id="header">
-		<h3> mat utter</h3><h3.5>.com</h3.5> 
-		<a href="/">contact_me</a>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+</head>
+
+<body>
+
+<div id="header">
+	<div id="center">
+		<left><a href="/"><%= image_tag "dotcom.png" %></a></left>
+		<right><a href="/"><%= image_tag "contact.png" %></a></right>
 	</div>
 </div>
-<%= yield %>
 
+
+<%= yield %>
