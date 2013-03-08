@@ -1,0 +1,9 @@
+
+<div class="nav">
+	<ul>
+		<li><a href="#home">home</a></li><br>
+		<li><a href="#about">about</a></li><br>
+		<li><a href="#contact">contact</a></li><br>
+	</ul>
+</div>
+

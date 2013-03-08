@@ -2,7 +2,6 @@
 <html>
 
 <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-38711204-1']);
   _gaq.push(['_trackPageview']);
@@ -12,7 +11,6 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>
 
 <head>
@@ -25,18 +23,21 @@
 
 <body>
 
+
 <div id="header">
 	<div id="center">
 		<left><a href="/"><%= image_tag "dotcom.png" %></a></left>
-		<right><a href="/"><%= image_tag "contact1.png" %></a></right>
+		<right><a href="#contact"><%= image_tag "contact1.png" %></a></right>
 	</div>
 </div>
 
 <div id="lcolumn">
-	<div id="nav">
-			<a href="/">HOME</a>
-			<a href="/about">ABOUT</a>
-			<a href="/code">CODE</a>
+	<div class="nav">
+
+		<a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#contact">Contact</a>
+	
 	</div>
 </div>
 
