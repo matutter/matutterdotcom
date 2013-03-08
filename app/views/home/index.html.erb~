@@ -1,2 +1,9 @@
-<div id="container">
+<div id="rcolumn">
+	<div id="container">
+	<h1>Activity</h1>
+	<p>This panel will show site activity.</p>
+		<ul>Things i push to git repos</ul>
+	
+
+	</div>
 </div>

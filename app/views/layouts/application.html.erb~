@@ -14,9 +14,16 @@
 <div id="header">
 	<div id="center">
 		<left><a href="/"><%= image_tag "dotcom.png" %></a></left>
-		<right><a href="/"><%= image_tag "contact.png" %></a></right>
+		<right><a href="/"><%= image_tag "contact1.png" %></a></right>
 	</div>
 </div>
 
+<div id="lcolumn">
+	<div id="nav">
+			<a href="/">HOME</a>
+			<a href="/about">ABOUT</a>
+			<a href="/code">CODE</a>
+	</div>
+</div>
 
 <%= yield %>
