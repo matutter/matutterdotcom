@@ -2,7 +2,7 @@ h3 {
 	color:#FEFEFE;
 	position: absolute;
 	top: -25px;
-	left: 80px;
+	right: 80px;
 	font-weight:bold;
 	font: 1.8em/1.8em "helvetica", arial, verdana, sans-serif;
 	}
@@ -25,16 +25,15 @@ ul {list-style-type: square;}
 #lcolumn
 {
 float:left;
-width:17%;
-/*background-color: rgba(255,255,255,0.5);*/
-height:100px;
+width:36%;
+
 }
 
 #rcolumn
 {
 float:right;
-width:80%;
-/*background-color: rgba(0,0,0,0.5);*/
+width:64%;
+
 }
 
 
@@ -45,17 +44,9 @@ width:80%;
 	max-width:800px;
 }
 
-#center left {
-	position:relative;
-	float:left;
-	margin-left:10%;
-}
-#center right {
-	
-}
 
 #header { 
-	position: fixed; 
+	position: absolute; 
 	top: 0px;
 	left: 0px;
 	background:transparent url("bg-header.png") 0 0 repeat-x;
@@ -65,23 +56,7 @@ width:80%;
 	height:38px;
 	z-index:1;
 	}
-/*
-#nav
-{
-	margin-top:70px;
-	width: auto;
-	background-color: rgba(0,0,0,0.5);
-	border-style:solid;
-	border-width:1px;
-	border-color:rgba(0,0,0,1);
-	padding:3px;
-	font-weight:bold;
-	font: 1.4em/1.4em "helvetica", arial, verdana, sans-serif;
-	word-spacing:0.1em;
-	line-height:1.1em;
-	color: rgba(255,255,255,1);
-}
-*/
+
 #nav a
 {
 font: 1.0em/1.0em "helvetica", arial, verdana, sans-serif;
@@ -91,43 +66,29 @@ text-decoration:none;
 
 #container
 {
-	position:relative;
-	margin-top:70px;
-	width: auto;
-	background-color: rgba(0,0,0,0.5);
-	border-style:solid;
-	border-width:1px;
-	border-color:rgba(0,0,0,1);
-	padding-left:3px;
-	font-weight:bold;
-	font: 1.0em/1.0em "helvetica", arial, verdana, sans-serif;
-	color: rgba(255,255,255,1);
+  position:relative;
+  top: 90px;
+	margin: 0 auto;
+	width: 800px;
+  height: 800px;
+	background: #333;
 }
 
 #container h1
 {
-position:relative;
-float:right;
-margin-top:-0.8em;
-font: 1.3em/1.3em "helvetica", arial, verdana, sans-serif;
+color: #FFF;
+font: 2.3em/1.3em "helvetica", arial, verdana, sans-serif;
+padding: 0px;
+margin:0px;
 font-weight:bold;
-background-color:rgba(0,216,255,.9);
 }
 
 #container h2
 {
-font: 1.0em/1.0em "helvetica", arial, verdana, sans-serif;
-font-weight:bold;
-position:relative;
-width:98%;
-background-color:rgba(0,0,0,.3);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-box-shadow: 0px 1px 0px 0px #000;
-    -moz-box-shadow: 0px 1px 0px 0px #000;
-    box-shadow: 0px 1px 0px 0px #000;
-padding:.3em;
-
+color: #FFF;
+font: 1.3em/1.3em "helvetica", arial, verdana, sans-serif;
+padding: 0px;
+margin:0px;
 }
 /*<!-- cool stuff --><!-- cool stuff --><!-- cool stuff -->	
 	<!-- cool stuff --><!-- cool stuff --><!-- cool stuff -->
@@ -178,309 +139,140 @@ a.glow, a.glow:hover, a.glow:focus
 }
 
 
-/* SPINNER *//* SPINNER *//* SPINNER */
-/* SPINNER *//* SPINNER *//* SPINNER *//* SPINNER *//* SPINNER */
-/* SPINNER *//* SPINNER *//* SPINNER *//* SPINNER */
-#bright {
-    position: absolute;
-		bottom:15%;
-		right:10%;
-		font: 1.4em/1.4em "helvetica", arial, verdana, sans-serif;
-		color:rgba(255,255,255,1);
-}
-
-#spinner.active {
-    display: block;
-}
-#spinner {
-    display: none;
-    position: absolute;
-    height: 60px;
-    width: 60px;
-    top: 40%;
-    left: 48%;
-    z-index: 1;
-}
-.spinner_ball {
-    position: absolute;
-    display: block;
-    background-color: white;
-    left: 24px;
-    width: 12px;
-    height: 12px;
-    border-radius: 6px;
-}
-#ball_1 {
-    -webkit-animation-timing-function: cubic-bezier(0.5, 0.3, 0.9, 0.9);
-    -webkit-animation-name: rotate; 
-    -webkit-animation-duration: 2s; 
-    -webkit-animation-iteration-count: infinite;
-    -webkit-transform-origin: 6px 30px;
-}
-#ball_2 {
-    -webkit-animation-timing-function: cubic-bezier(0.5, 0.5, 0.9, 0.9);
-    -webkit-animation-name: rotate; 
-    -webkit-animation-duration: 2s; 
-    -webkit-animation-iteration-count: infinite;
-    -webkit-transform-origin: 6px 30px;
-}
-#ball_3 {
-    -webkit-animation-timing-function: cubic-bezier(0.5, 0.7, 0.9, 0.9);
-    -webkit-animation-name: rotate; 
-    -webkit-animation-duration: 2s; 
-    -webkit-animation-iteration-count: infinite;
-    -webkit-transform-origin: 6px 30px;
-}
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(0deg) scale(1);
-  }
-  100% { 
-    -webkit-transform: rotate(1440deg) scale(1); 
-  }
-}​
-
-/********* SEACRCH *//********* SEACRCH *//********* SEACRCH */
-/********* SEACRCH *//********* SEACRCH *//********* SEACRCH */
-/********* SEACRCH *//********* SEACRCH *//********* SEACRCH */
-@import url(http://fonts.googleapis.com/css?family=Cabin:400);
-
-.webdesigntuts-workshop {
-	background: #151515;
-	height: 100%;
-	position: absolute;
-	text-align: center;
-	width: 100%;
-}
-
-.webdesigntuts-workshop:before,
-.webdesigntuts-workshop:after {
-	content: '';
-	display: block;	
-	height: 1px;
-	left: 50%;
-	margin: 0 0 0 -400px;
-	position: absolute;
-	
-}
-
-.webdesigntuts-workshop:before {
-	background: #444;
-	background: -webkit-linear-gradient(left, #151515, #444, #151515);
-	background: -moz-linear-gradient(left, #151515, #444, #151515);
-	background: -o-linear-gradient(left, #151515, #444, #151515);
-	background: -ms-linear-gradient(left, #151515, #444, #151515);
-	background: linear-gradient(left, #151515, #444, #151515);
-	top: 192px;
-}
-
-.webdesigntuts-workshop:after {
-	background: #000;
-	background: -webkit-linear-gradient(left, #151515, #000, #151515);	
-	background: -moz-linear-gradient(left, #151515, #000, #151515);	
-	background: -o-linear-gradient(left, #151515, #000, #151515);	
-	background: -ms-linear-gradient(left, #151515, #000, #151515);	
-	background: linear-gradient(left, #151515, #000, #151515);	
-	top: 191px;
-}
-
-.webdesigntuts-workshop form {
-	background: #111;
-	background: -webkit-linear-gradient(#1b1b1b, #111);
-	background: -moz-linear-gradient(#1b1b1b, #111);
-	background: -o-linear-gradient(#1b1b1b, #111);
-	background: -ms-linear-gradient(#1b1b1b, #111);
-	background: linear-gradient(#1b1b1b, #111);
-	border: 1px solid #000;
-	border-radius: 5px;
-	box-shadow: inset 0 0 0 1px #272727;
-	display: inline-block;
-	font-size: 0px;
-	margin: 150px auto 0;
-	padding: 20px;
-	position: relative;
-	z-index: 1;
-}
-
-.webdesigntuts-workshop input {
-	background: #222;
-	background: -webkit-linear-gradient(#333, #222);	
-	background: -moz-linear-gradient(#333, #222);	
-	background: -o-linear-gradient(#333, #222);	
-	background: -ms-linear-gradient(#333, #222);	
-	background: linear-gradient(#333, #222);	
-	border: 1px solid #444;
-	border-radius: 5px 0 0 5px;
-	box-shadow: 0 2px 0 #000;
-	color: #888;
-	display: block;
-	float: left;
-	font-family: 'Cabin', helvetica, arial, sans-serif;
-	font-size: 13px;
-	font-weight: 400;
-	height: 40px;
-	margin: 0;
-	padding: 0 10px;
-	text-shadow: 0 -1px 0 #000;
-	width: 200px;
-}
-
-.ie .webdesigntuts-workshop input {
-	line-height: 40px;
-}
-
-.webdesigntuts-workshop input::-webkit-input-placeholder {
-   color: #888;
-}
-
-.webdesigntuts-workshop input:-moz-placeholder {
-   color: #888;
-}
-
-.webdesigntuts-workshop input:focus {
-	-webkit-animation: glow 800ms ease-out infinite alternate;
-	-moz-animation: glow 800ms ease-out infinite alternate;
-	-o-animation: glow 800ms ease-out infinite alternate;
-	-ms-animation: glow 800ms ease-out infinite alternate;
-	animation: glow 800ms ease-out infinite alternate;
-	background: rgba(0,216,255,1);
-	background: -webkit-linear-gradient(#333933, #222922);
-	background: -moz-linear-gradient(#333933, #222922);
-	background: -o-linear-gradient(#333933, #222922);
-	background: -ms-linear-gradient(#333933, #222922);
-	background: linear-gradient(#333933, #222922);
-	border-color: rgba(0,216,255,1);
-	box-shadow: 0 0 5px rgba(0,216,255,1), inset 0 0 5px rgba(0,216,255,1), 0 2px 0 #000;
-	color: #efe;
-	outline: none;
-}
-
-.webdesigntuts-workshop input:focus::-webkit-input-placeholder { 
-	color: #efe;
-}
-
-.webdesigntuts-workshop input:focus:-moz-placeholder {
-	color: #rgba(0,216,255,1);
-}
-
-.webdesigntuts-workshop button {
-	background: #222;
-	background: -webkit-linear-gradient(#333, #222);
-	background: -moz-linear-gradient(#333, #222);
-	background: -o-linear-gradient(#333, #222);
-	background: -ms-linear-gradient(#333, #222);
-	background: linear-gradient(#333, #222);
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	-o-box-sizing: content-box;
-	-ms-box-sizing: content-box;
-	box-sizing: content-box;
-	border: 1px solid #444;
-	border-left-color: #000;
-	border-radius: 0 5px 5px 0;
-	box-shadow: 0 2px 0 #000;
-	color: #fff;
-	display: block;
-	float: left;
-	font-family: 'Cabin', helvetica, arial, sans-serif;
-	font-size: 13px;
-	font-weight: 400;
-	height: 40px;
-	line-height: 40px;
+@charset "utf-8";
+body {
+	font: 100%/1.0 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #4E5869;
 	margin: 0;
 	padding: 0;
-	position: relative;
-	text-shadow: 0 -1px 0 #000;
-	width: 80px;
-}	
-
-.webdesigntuts-workshop button:hover,
-.webdesigntuts-workshop button:focus {
-	background:  rgba(0,216,255,1);
-	background: -webkit-linear-gradient(#393939, #292929);	
-	background: -moz-linear-gradient(#393939, #292929);	
-	background: -o-linear-gradient(#393939, #292929);	
-	background: -ms-linear-gradient(#393939, #292929);	
-	background: linear-gradient(#393939, #292929);
-	color: #00d8ff;
-	outline: none;
+	color: #000;
+	text-shadow: rgba(0, 0, 0, 0.498039);
 }
 
-.webdesigntuts-workshop button:active {
-	background:  #rgba(0,216,255,1);
-	background: -webkit-linear-gradient(#393939, #292929);
-	background: -moz-linear-gradient(#393939, #292929);
-	background: -o-linear-gradient(#393939, #292929);
-	background: -ms-linear-gradient(#393939, #292929);
-	background: linear-gradient(#393939, #292929);
-	box-shadow: 0 1px 0 #000, inset 1px 0 1px  #rgba(0,216,255,1);
-	top: 1px;
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+border-style:solid;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border-color:#FFF;
 }
 
-@-webkit-keyframes glow {
-    0% {
-		border-color:  #294;
-		box-shadow: 0 0 5px  #rgba(0,216,255,.1), inset 0 0 5px  #rgba(0,216,255,.1), 0 2px 0 #000;
-    }	
-    100% {
-		border-color: #00d8ff;
-		box-shadow: 0 0 20px #rgba(0,216,255,.6), inset 0 0 10px #rgba(0,216,255,.4), 0 2px 0 #000;
-    }
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
 }
 
-@-moz-keyframes glow {
-    0% {
-		border-color: #294;
-		box-shadow: 0 0 5px rgba(0,216,255,.2), inset 0 0 5px rgba(0,216,255,.1), 0 2px 0 #000;
-    }	
-    100% {
-		border-color: #00d8ff;
-		box-shadow: 0 0 20px #rgba(0,216,255,.6), inset 0 0 10px #rgba(0,216,255,.4), 0 2px 0 #000;
-    }
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
 }
 
-@-o-keyframes glow {
-    0% {
-		border-color: #294;
-		box-shadow: 0 0 5px rgba(0,216,255,.2), inset 0 0 5px rgba(0,216,255,.1), 0 2px 0 #000;
-    }	
-    100% {
-		border-color: #00d8ff;
-		box-shadow: 0 0 20px rgba(0,216,255,.6), inset 0 0 10px rgba(0,216,255,.4), 0 2px 0 #000;
-    }
+/* ~~the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo~~ */
+.header {
+	background-color: #333;
+	margin: 10px;
+	color:#FFF;
+	height:240px;
+	text-shadow: rgba(0, 0, 0, 0.498039);
 }
 
-@-ms-keyframes glow {
-    0% {
-		border-color:  #294;
-		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
-    }	
-    100% {
-		border-color: #00d8ff;
-		box-shadow: 0 0 20px rgba(0,216,255,.6), inset 0 0 10px rgba(0,216,255,.4), 0 2px 0 #000;
-    }
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+	padding: 10px 0;
 }
 
-@keyframes glow {
-    0% {
-		border-color: #294;
-		box-shadow: 0 0 5px rgba(0,216,255,.2), inset 0 0 5px rgba(0,216,255,.1), 0 2px 0 #000;
-    }	
-    100% {
-		border-color: #00d8ff;
-		box-shadow: 0 0 20px rgba(0,216,255,.6), inset 0 0 10px rgba(0,216,255,.4), 0 2px 0 #000;
-    }
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
 }
 
-@-webkit-keyframes bluePulse {
-from { background-color: #0096b1; -webkit-box-shadow: 0 0 9px #333; }
-50% { background-color: #00d8ff; -webkit-box-shadow: 0 0 18px #00d8ff; }
-to { background-color: #4ee4ff; -webkit-box-shadow: 0 0 9px #4ee4ff; }
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #6F7D94;
 }
 
-a.blue.button {
--webkit-animation-name: BluePulse;
--webkit-animation-duration: 2s;
--webkit-animation-iteration-count: infinite;
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
 }
 
+.container .header p strong {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.container .header p strong {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.container .header p strong {
+	font-family: Georgia, Times New Roman, Times, serif;
+}
+.container .header p strong {
+	font-family: Courier New, Courier, monospace;
+}
+.container .header p strong {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.container .header p strong {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.head {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+}
+.head2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FFF;
+}
+.head2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 0px;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FFF;
+}
