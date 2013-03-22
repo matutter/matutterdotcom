@@ -27,18 +27,26 @@
 <div id="header">
 	<div id="center">
 		<left><a href="/"><%= image_tag "dotcom.png" %></a></left>
-		<right><a href="/"><%= image_tag "contact1.png" %></a></right>
+		<right><a href="#contact"><%= image_tag "contact1.png" %></a></right>
 	</div>
 </div>
 
 <div id="lcolumn">
 	<div class="nav">
 
-		<a href="#home">Home</a>
-		<a href="#about">About</a>
-		<a href="#contact">Contact</a>
+		<a href="#home" class="glow">Home</a>
+		<a href="#about" class="glow">About</a>
+		<a href="#contact" class="glow">Contact</a>
 	
 	</div>
 </div>
+	<div id="bright">
+			#under developement
+    <div id="spinner" class="Xactive">
 
+        <span id="ball_1" class="spinner_ball"></span>
+        <span id="ball_2" class="spinner_ball"></span>
+        <span id="ball_3" class="spinner_ball"></span>
+    </div>
+	</div>
 <%= yield %>

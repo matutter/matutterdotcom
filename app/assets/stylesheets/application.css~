@@ -14,10 +14,10 @@ p {
 body {
 	margin-left: 9%;
 	width:82%;
+	max-width:800px;
 	background-image: url("back.jpg");
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	max-width:800px;
 }
 
 ul {list-style-type: square;}
@@ -39,16 +39,18 @@ width:80%;
 
 
 #center {
-	width:80%;
-	margin-left: 10%;
+	display:inline;
+	margin-left: 9%;
+	width:82%;
+	max-width:800px;
 }
 
 #center left {
+	position:relative;
 	float:left;
-	
+	margin-left:10%;
 }
 #center right {
-	float:right;
 	
 }
 
@@ -115,6 +117,7 @@ background-color:rgba(0,216,255,.9);
 #container h2
 {
 font: 1.0em/1.0em "helvetica", arial, verdana, sans-serif;
+font-weight:bold;
 position:relative;
 width:98%;
 background-color:rgba(0,0,0,.3);
@@ -132,15 +135,13 @@ padding:.3em;
 .nav {
     position: relative;
     z-index: 5;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
+
     background-color: rgba(0,0,0,.5);
-    -webkit-box-shadow: 0px 1px 0px 0px #cccccc;
-    -moz-box-shadow: 0px 1px 0px 0px #cccccc;
-    box-shadow: 0px 1px 0px 0px #cccccc;
+
+    
 	margin-top:70px;
 	border-style:solid;
-	border-width:1px;
+
 	border-color:rgba(0,0,0,1);
 	padding:3px;
 	font-weight:bold;
@@ -162,9 +163,324 @@ padding:.3em;
 		height:auto;
     color: rgba(0,216,255,1);
     text-shadow: 0px 1px 0px #050505;
-    background: rgb(56,56,56);
- 		-webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
 }
 
+a.glow, a.glow:hover, a.glow:focus
+{
+	text-decoration: none;
+	
+	text-shadow: none;
+	-webkit-transition: 600ms linear 0s;
+	-moz-transition: 600ms linear 0s;
+	-o-transition: 600ms linear 0s;
+	transition: 600ms linear 0s;
+	outline: 2em;
+}
+
+
+/* SPINNER *//* SPINNER *//* SPINNER */
+/* SPINNER *//* SPINNER *//* SPINNER *//* SPINNER *//* SPINNER */
+/* SPINNER *//* SPINNER *//* SPINNER *//* SPINNER */
+#bright {
+    position: absolute;
+		bottom:15%;
+		right:10%;
+		font: 1.4em/1.4em "helvetica", arial, verdana, sans-serif;
+		color:rgba(255,255,255,1);
+}
+
+#spinner.active {
+    display: block;
+}
+#spinner {
+    display: none;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 40%;
+    left: 48%;
+    z-index: 1;
+}
+.spinner_ball {
+    position: absolute;
+    display: block;
+    background-color: white;
+    left: 24px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+}
+#ball_1 {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.3, 0.9, 0.9);
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 6px 30px;
+}
+#ball_2 {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.5, 0.9, 0.9);
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 6px 30px;
+}
+#ball_3 {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.7, 0.9, 0.9);
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 6px 30px;
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+  }
+  100% { 
+    -webkit-transform: rotate(1440deg) scale(1); 
+  }
+}​
+
+/********* SEACRCH *//********* SEACRCH *//********* SEACRCH */
+/********* SEACRCH *//********* SEACRCH *//********* SEACRCH */
+/********* SEACRCH *//********* SEACRCH *//********* SEACRCH */
+@import url(http://fonts.googleapis.com/css?family=Cabin:400);
+
+.webdesigntuts-workshop {
+	background: #151515;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.webdesigntuts-workshop:before,
+.webdesigntuts-workshop:after {
+	content: '';
+	display: block;	
+	height: 1px;
+	left: 50%;
+	margin: 0 0 0 -400px;
+	position: absolute;
+	
+}
+
+.webdesigntuts-workshop:before {
+	background: #444;
+	background: -webkit-linear-gradient(left, #151515, #444, #151515);
+	background: -moz-linear-gradient(left, #151515, #444, #151515);
+	background: -o-linear-gradient(left, #151515, #444, #151515);
+	background: -ms-linear-gradient(left, #151515, #444, #151515);
+	background: linear-gradient(left, #151515, #444, #151515);
+	top: 192px;
+}
+
+.webdesigntuts-workshop:after {
+	background: #000;
+	background: -webkit-linear-gradient(left, #151515, #000, #151515);	
+	background: -moz-linear-gradient(left, #151515, #000, #151515);	
+	background: -o-linear-gradient(left, #151515, #000, #151515);	
+	background: -ms-linear-gradient(left, #151515, #000, #151515);	
+	background: linear-gradient(left, #151515, #000, #151515);	
+	top: 191px;
+}
+
+.webdesigntuts-workshop form {
+	background: #111;
+	background: -webkit-linear-gradient(#1b1b1b, #111);
+	background: -moz-linear-gradient(#1b1b1b, #111);
+	background: -o-linear-gradient(#1b1b1b, #111);
+	background: -ms-linear-gradient(#1b1b1b, #111);
+	background: linear-gradient(#1b1b1b, #111);
+	border: 1px solid #000;
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 1px #272727;
+	display: inline-block;
+	font-size: 0px;
+	margin: 150px auto 0;
+	padding: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.webdesigntuts-workshop input {
+	background: #222;
+	background: -webkit-linear-gradient(#333, #222);	
+	background: -moz-linear-gradient(#333, #222);	
+	background: -o-linear-gradient(#333, #222);	
+	background: -ms-linear-gradient(#333, #222);	
+	background: linear-gradient(#333, #222);	
+	border: 1px solid #444;
+	border-radius: 5px 0 0 5px;
+	box-shadow: 0 2px 0 #000;
+	color: #888;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	margin: 0;
+	padding: 0 10px;
+	text-shadow: 0 -1px 0 #000;
+	width: 200px;
+}
+
+.ie .webdesigntuts-workshop input {
+	line-height: 40px;
+}
+
+.webdesigntuts-workshop input::-webkit-input-placeholder {
+   color: #888;
+}
+
+.webdesigntuts-workshop input:-moz-placeholder {
+   color: #888;
+}
+
+.webdesigntuts-workshop input:focus {
+	-webkit-animation: glow 800ms ease-out infinite alternate;
+	-moz-animation: glow 800ms ease-out infinite alternate;
+	-o-animation: glow 800ms ease-out infinite alternate;
+	-ms-animation: glow 800ms ease-out infinite alternate;
+	animation: glow 800ms ease-out infinite alternate;
+	background: rgba(0,216,255,1);
+	background: -webkit-linear-gradient(#333933, #222922);
+	background: -moz-linear-gradient(#333933, #222922);
+	background: -o-linear-gradient(#333933, #222922);
+	background: -ms-linear-gradient(#333933, #222922);
+	background: linear-gradient(#333933, #222922);
+	border-color: rgba(0,216,255,1);
+	box-shadow: 0 0 5px rgba(0,216,255,1), inset 0 0 5px rgba(0,216,255,1), 0 2px 0 #000;
+	color: #efe;
+	outline: none;
+}
+
+.webdesigntuts-workshop input:focus::-webkit-input-placeholder { 
+	color: #efe;
+}
+
+.webdesigntuts-workshop input:focus:-moz-placeholder {
+	color: #rgba(0,216,255,1);
+}
+
+.webdesigntuts-workshop button {
+	background: #222;
+	background: -webkit-linear-gradient(#333, #222);
+	background: -moz-linear-gradient(#333, #222);
+	background: -o-linear-gradient(#333, #222);
+	background: -ms-linear-gradient(#333, #222);
+	background: linear-gradient(#333, #222);
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+	border: 1px solid #444;
+	border-left-color: #000;
+	border-radius: 0 5px 5px 0;
+	box-shadow: 0 2px 0 #000;
+	color: #fff;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-shadow: 0 -1px 0 #000;
+	width: 80px;
+}	
+
+.webdesigntuts-workshop button:hover,
+.webdesigntuts-workshop button:focus {
+	background:  rgba(0,216,255,1);
+	background: -webkit-linear-gradient(#393939, #292929);	
+	background: -moz-linear-gradient(#393939, #292929);	
+	background: -o-linear-gradient(#393939, #292929);	
+	background: -ms-linear-gradient(#393939, #292929);	
+	background: linear-gradient(#393939, #292929);
+	color: #00d8ff;
+	outline: none;
+}
+
+.webdesigntuts-workshop button:active {
+	background:  #rgba(0,216,255,1);
+	background: -webkit-linear-gradient(#393939, #292929);
+	background: -moz-linear-gradient(#393939, #292929);
+	background: -o-linear-gradient(#393939, #292929);
+	background: -ms-linear-gradient(#393939, #292929);
+	background: linear-gradient(#393939, #292929);
+	box-shadow: 0 1px 0 #000, inset 1px 0 1px  #rgba(0,216,255,1);
+	top: 1px;
+}
+
+@-webkit-keyframes glow {
+    0% {
+		border-color:  #294;
+		box-shadow: 0 0 5px  #rgba(0,216,255,.1), inset 0 0 5px  #rgba(0,216,255,.1), 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #00d8ff;
+		box-shadow: 0 0 20px #rgba(0,216,255,.6), inset 0 0 10px #rgba(0,216,255,.4), 0 2px 0 #000;
+    }
+}
+
+@-moz-keyframes glow {
+    0% {
+		border-color: #294;
+		box-shadow: 0 0 5px rgba(0,216,255,.2), inset 0 0 5px rgba(0,216,255,.1), 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #00d8ff;
+		box-shadow: 0 0 20px #rgba(0,216,255,.6), inset 0 0 10px #rgba(0,216,255,.4), 0 2px 0 #000;
+    }
+}
+
+@-o-keyframes glow {
+    0% {
+		border-color: #294;
+		box-shadow: 0 0 5px rgba(0,216,255,.2), inset 0 0 5px rgba(0,216,255,.1), 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #00d8ff;
+		box-shadow: 0 0 20px rgba(0,216,255,.6), inset 0 0 10px rgba(0,216,255,.4), 0 2px 0 #000;
+    }
+}
+
+@-ms-keyframes glow {
+    0% {
+		border-color:  #294;
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #00d8ff;
+		box-shadow: 0 0 20px rgba(0,216,255,.6), inset 0 0 10px rgba(0,216,255,.4), 0 2px 0 #000;
+    }
+}
+
+@keyframes glow {
+    0% {
+		border-color: #294;
+		box-shadow: 0 0 5px rgba(0,216,255,.2), inset 0 0 5px rgba(0,216,255,.1), 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #00d8ff;
+		box-shadow: 0 0 20px rgba(0,216,255,.6), inset 0 0 10px rgba(0,216,255,.4), 0 2px 0 #000;
+    }
+}
+
+@-webkit-keyframes bluePulse {
+from { background-color: #0096b1; -webkit-box-shadow: 0 0 9px #333; }
+50% { background-color: #00d8ff; -webkit-box-shadow: 0 0 18px #00d8ff; }
+to { background-color: #4ee4ff; -webkit-box-shadow: 0 0 9px #4ee4ff; }
+}
+
+a.blue.button {
+-webkit-animation-name: BluePulse;
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: infinite;
+}
 
