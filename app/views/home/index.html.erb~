@@ -100,7 +100,7 @@ return false;
     
     	<!-- Start of top logo -->
         <div id="top_logo">
-      	<a href="#"><img <%= image_tag "logo.png" %> width="220" height="45" alt="logo" /></a>
+      	<a href="#"> <%= image_tag "logo.png" %> </a>
         
         </div><!-- End of top_logo -->
         
@@ -131,9 +131,9 @@ return false;
 
             <!-- Start of one half first -->
             <div class="one_half_first">
-            <img src="img/about_image.png" width="123" height="143" alt="my image" />
-            
-            <h3>Hi, I'm Jess Atkinson</h3>
+            <!--<img src="matutter.png" width="123" height="143" alt="my image" />-->
+            <%= image_tag "matutter.jpg" %>
+            <h3>Hi, I'm Mat Utter</h3>
             
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo <a href="#">consectetur adipisicing elit.</a></p>
             
@@ -149,7 +149,7 @@ return false;
                 
                     <!-- Start of contact me phone -->
                     <div class="contact_me_phone">
-                    <img src="img/Cmobile_bubble.png" width="44" height="47" alt="phone" />555.555.5555
+                    <img src="img/Cmobile_bubble.png" width="44" height="47" alt="phone" />315.262.7252
                     
                     </div><!-- End of contact me phone -->
                     
@@ -160,7 +160,7 @@ return false;
                 
                     <!-- Start of contact me site -->
                     <div class="contact_me_site">
-                    <img src="img/Csite_bubble.png" width="44" height="47" alt="site" /><a href="#">www.website.com</a>
+                    <img src="img/Csite_bubble.png" width="44" height="47" alt="site" /><a href="#">Contact me!</a>
                     
                     </div><!-- End of contact me site -->
                     
@@ -171,7 +171,7 @@ return false;
                 
                     <!-- Start of contact me location -->
                     <div class="contact_me_location">
-                    <img src="img/Clocation_bubble.png" width="44" height="47" alt="location" />Urbana, OH
+                    <img src="img/Clocation_bubble.png" width="44" height="47" alt="location" />Utica, NY
                     
                     </div><!-- End of contact me location -->
                     
@@ -182,8 +182,7 @@ return false;
                 
                     <!-- Start of contact me email -->
                     <div class="contact_me_email">
-                    <img src="img/Cemail_bubble.png" width="44" height="47" alt="email" /><a href="mailto:info@the_resume_template.com">email@gmail.com</a>
-                    
+                   <img src="img/Cemail_bubble.png" width="44" height="47" alt="email" /><a href="mailto:info@the_resume_template.com">Me @ Gmail</a>
                     </div><!-- End of contact me email -->
                     
                 </div><!-- End of one half -->
@@ -263,19 +262,18 @@ return false;
             
                 <!-- width=the length that will display - left=100 less width set ie 100-42=58 etc etc --> 
                 <ul class="events">
-                    <li class="red" style="width: 40%; left: 60%;">Whistle Marketing</li>
-                    <li class="beige" style="width: 39%; left: 24%;">Envato</li>
-                    <li style="width: 25%; left: 0%;">Google</li>
+                    <li class="red" style="width: 045%;LEFT:40%;">SUNYIT</li>
+                    <li class="beige" style="width: 40%;left: 0%;">SUNY Canton</li>
+                    <li style="width: 25%; left: 0%;">PriceChopper SuperMarkets</li>
                 </ul> <!-- end .events -->
             
                 <ul class="intervals">
-                    <li class="first">2003</li>
-                    <li>2007</li>
-                    <li>2008</li>
-                    <li>2009</li>
-                    <li>2010</li>
+                    <li class="first">2010</li>
                     <li>2011</li>
-                    <li class="last">2012</li>
+                    <li>2012</li>
+                    <li>2013</li>
+                    <li>2014</li>
+                    <li class="last">2015</li>
                 </ul> <!-- end .intervals -->
                 
 			</div> <!-- end .timeline -->
@@ -610,7 +608,7 @@ return false;
                 
                     <!-- Start of contact me phone -->
                     <div class="contact_me_phone">
-                    <img src="img/Cmobile_bubble.png" width="44" height="47" alt="phone" />555.555.5555
+                    <img src="img/Cmobile_bubble.png" width="44" height="47" alt="phone" />315.262.7252
                     
                     </div><!-- End of contact me phone -->
                     
@@ -643,7 +641,7 @@ return false;
                 
                     <!-- Start of contact me email -->
                     <div class="contact_me_email">
-                    <img src="img/Cemail_bubble.png" width="44" height="47" alt="email" /><a href="mailto:info@the_resume_template.com">email@gmail.com</a>
+                    <img src="img/Cemail_bubble.png" width="44" height="47" alt="email" /><a href="mailto:matutter4@gmail.com">email@gmail.com</a>
                     
                     </div><!-- End of contact me email -->
                     
@@ -691,7 +689,7 @@ return false;
     
     	<!-- Start of copyright -->
         <div class="copyright">
-        &copy; Copyright 2012 <a href="http://www.whistlemarketing.com">WhistleMarketing, Inc.</a>  All Rights Reserved.
+        &copy; Copyright 2012 <a href="/">Mathew C Utter</a>  All Rights Reserved.
         
         </div><!-- End of copyright -->
         
@@ -701,7 +699,7 @@ return false;
             <!-- Start of facebook -->
             <div class="facebook">
             
-            <a href="http://facebook.com" target="_blank"><img src="img/facebook.png" width="44" height="47" alt="facebook" /></a>
+            <a href="http://facebook.com/matutter" target="_blank"><img src="img/facebook.png" width="44" height="47" alt="facebook" /></a>
             
             </div><!-- End of facebook -->
             
