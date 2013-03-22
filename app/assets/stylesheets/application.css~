@@ -234,4 +234,45 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	line-height: 0px;
 }
 
-
+.container .header p strong {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.container .header p strong {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.container .header p strong {
+	font-family: Georgia, Times New Roman, Times, serif;
+}
+.container .header p strong {
+	font-family: Courier New, Courier, monospace;
+}
+.container .header p strong {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.container .header p strong {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.head {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+}
+.head2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FFF;
+}
+.head2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 0px;
+	font-weight: normal;
+	font-variant: normal;
+	color: #FFF;
+}
