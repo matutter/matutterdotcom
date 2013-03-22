@@ -24,7 +24,12 @@
 <body>
 
 
-
+<div id="header">
+	<div id="center">
+		<a href="/"><%= image_tag "dotcom.png" %></a>
+		<a href="#contact"> <h3>#under_developement</h3></a>
+	</div>
+</div>
 
 
 
