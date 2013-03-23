@@ -100,13 +100,13 @@ return false;
     
     	<!-- Start of top logo -->
         <div id="top_logo">
-      	<a href="#"> <%= image_tag "logo.png" %> </a>
+      	<a href="#"> <%= image_tag "logo2.png" %> </a>
         
         </div><!-- End of top_logo -->
         
         <!-- Start of top download -->
         <div id="top_download">
-        <a href="pdf version" target="_blank"><img src="img/download_hover2.png" width="181" height="220" alt="Download PDF" /></a>
+        <a href="pdf version" target="_blank"><%= image_tag "download_hover2.png"%></a>
         
         </div><!-- End of top download -->
     
@@ -149,7 +149,7 @@ return false;
                 
                     <!-- Start of contact me phone -->
                     <div class="contact_me_phone">
-                    <img src="img/Cmobile_bubble.png" width="44" height="47" alt="phone" />315.262.7252
+                    <%= image_tag "Cmobile_bubble.png" %>315.262.7252
                     
                     </div><!-- End of contact me phone -->
                     
@@ -160,7 +160,7 @@ return false;
                 
                     <!-- Start of contact me site -->
                     <div class="contact_me_site">
-                    <img src="img/Csite_bubble.png" width="44" height="47" alt="site" /><a href="#">Contact me!</a>
+                    <%= image_tag "Csite_bubble.png" %><a href="#">Contact me!</a>
                     
                     </div><!-- End of contact me site -->
                     
@@ -171,7 +171,7 @@ return false;
                 
                     <!-- Start of contact me location -->
                     <div class="contact_me_location">
-                    <img src="img/Clocation_bubble.png" width="44" height="47" alt="location" />Utica, NY
+                    <%= image_tag "Clocation_bubble.png" %>Utica, NY
                     
                     </div><!-- End of contact me location -->
                     
@@ -182,7 +182,7 @@ return false;
                 
                     <!-- Start of contact me email -->
                     <div class="contact_me_email">
-                   <img src="img/Cemail_bubble.png" width="44" height="47" alt="email" /><a href="mailto:info@the_resume_template.com">Me @ Gmail</a>
+                   <%= image_tag "Cemail_bubble.png" %><a href="mailto:info@the_resume_template.com">Me @ Gmail</a>
                     </div><!-- End of contact me email -->
                     
                 </div><!-- End of one half -->
@@ -256,7 +256,7 @@ return false;
             
             <!-- Start of full width -->
             <div class="full_width">
-            <h3>My Employment Timeline</h3>
+            <h3>My Timeline</h3>
             
             <div class="timeline">
             
@@ -273,7 +273,8 @@ return false;
                     <li>2012</li>
                     <li>2013</li>
                     <li>2014</li>
-                    <li class="last">2015</li>
+                  <li>2015</li>
+                    <li class="last">2016</li>
                 </ul> <!-- end .intervals -->
                 
 			</div> <!-- end .timeline -->
@@ -608,7 +609,7 @@ return false;
                 
                     <!-- Start of contact me phone -->
                     <div class="contact_me_phone">
-                    <img src="img/Cmobile_bubble.png" width="44" height="47" alt="phone" />315.262.7252
+                    <%= image_tag "Cmobile_bubble.png" %> 315.262.7252
                     
                     </div><!-- End of contact me phone -->
                     
@@ -619,7 +620,7 @@ return false;
                 
                     <!-- Start of contact me site -->
                     <div class="contact_me_site">
-                    <img src="img/Csite_bubble.png" width="44" height="47" alt="site" /><a href="#">www.website.com</a>
+                    <%= image_tag "Csite_bubble.png" %> <a href="#">matutter.com</a>
                     
                     </div><!-- End of contact me site -->
                     
@@ -630,7 +631,7 @@ return false;
                 
                     <!-- Start of contact me location -->
                     <div class="contact_me_location">
-                    <img src="img/Clocation_bubble.png" width="44" height="47" alt="location" />Urbana, OH
+                    <%= image_tag "Clocation_bubble.png" %> Utica, NY
                     
                     </div><!-- End of contact me location -->
                     
@@ -641,7 +642,7 @@ return false;
                 
                     <!-- Start of contact me email -->
                     <div class="contact_me_email">
-                    <img src="img/Cemail_bubble.png" width="44" height="47" alt="email" /><a href="mailto:matutter4@gmail.com">email@gmail.com</a>
+                    <%= image_tag "Cemail_bubble.png" %><a href="mailto:matutter4@gmail.com">email@gmail.com</a>
                     
                     </div><!-- End of contact me email -->
                     
@@ -699,35 +700,35 @@ return false;
             <!-- Start of facebook -->
             <div class="facebook">
             
-            <a href="http://facebook.com/matutter" target="_blank"><img src="img/facebook.png" width="44" height="47" alt="facebook" /></a>
+            <a href="http://facebook.com/matutter" target="_blank"><%= image_tag "facebook.png" %></a>
             
             </div><!-- End of facebook -->
             
             <!-- Start of tweet -->
             <div class="tweet">
             
-            <a href="http://twitter.com" target="_blank"><img src="img/twitter.png" width="44" height="47" alt="twitter" /></a>
+            <a href="http://twitter.com/matutter" target="_blank"><%= image_tag "twitter.png" %></a>
             
             </div><!-- End of tweet -->
             
             <!-- Start of flickr -->
             <div class="flickr">
             
-            <a href="http://flickr.com" target="_blank"><img src="img/flickr.png" width="44" height="47" alt="flickr" /></a>
+            <a href="http://flickr.com" target="_blank"><%= image_tag "flickr.png" %></a>
             
             </div><!-- End of flickr -->
             
             <!-- Start of youtube -->
             <div class="youtube">
             
-            <a href="http://youtube.com" target="_blank"><img src="img/youtube.png" width="44" height="47" alt="youtube" /></a>
+            <a href="http://youtube.com" target="_blank"><%= image_tag "youtube.png"%></a>
             
             </div><!-- End of youtube -->
             
             <!-- Start of linkedin -->
             <div class="linkedin">
             
-            <a href="http://linkedin.com" target="_blank"><img src="img/linkedin.png" width="44" height="47" alt="linkedin" /></a>
+            <a href="http://linkedin.com" target="_blank"> <%= image_tag "linkedin.png"%></a>
             
             </div><!-- End of linkedin -->                                                
         
