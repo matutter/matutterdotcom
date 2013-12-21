@@ -1,7 +1,17 @@
-require('http').createServer( function(request, response) {
-	response.writeHead(200,{'Content-Type':'text/plain'});
-	response.write('<div class="status">Server Online</div>')
-	response.end();
-}).listen(8888);
+var status	= "Online";
+var http	= require('http');
+var url		= require('url');
 
-console.log("server up!");
+function wake(route, handle) {
+	function onRequest(request, response) {
+		var postData = "";
+		var pathname = url.parse(request.url).pathname;
+		console.log("Req - "+pathname);
+		route(handle, pathname, response, request);
+}
+
+http.createServer(onRequest).listen(8888);
+console.log("Server "+status);
+}
+
+exports.wake = wake;
