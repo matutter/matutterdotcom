@@ -27,8 +27,4 @@
     "url": "https://github.com/matutter/matutterdotcom/issues"
   },
   "homepage": "https://github.com/matutter/matutterdotcom"
-  "engines": {
-	"node": "0.10.24"
-  }
-
-  }
+}
