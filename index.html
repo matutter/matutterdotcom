@@ -12,26 +12,26 @@
 </div>
 <div class="col-sm-8 in-40">
 
-<a href="#about" class="links"> <img src="about.png" data-src="holder.js/40x130" class="out-40"></a>
-<a href="#resume" class="links">  <img src="resume.png" data-src="holder.js/40x160" class="out-40" style="top:130px;"></a>
-<a href="#portfolio" class="links">  <img src="portfolio.png" data-src="holder.js/40x130" class="out-40" style="top:300px; "></a>
+<a  class="links"> <img id="a" src="about.png" data-src="holder.js/40x130" class="out-40 active"></a>
+<a  class="links">  <img id="r" src="resume.png" data-src="holder.js/40x160" class="out-40" style="top:135px;"></a>
+<a  class="links">  <img id="p" src="portfolio.png" data-src="holder.js/40x130" class="out-40" style="top:300px; "></a>
 
 <div class="col-sm-12">
 	<nav class="navbar navbar-default" role="navigation">
 
 		<div class="col-sm-4">
-		<a class="navbar-brand" href="#"><img data-src="holder.js/450x100" src="mat.png"  alt="Mat Utter - Software Engineer" class="img-responsive"></a>
+		<a class="navbar-brand"><img data-src="holder.js/450x100" src="mat.png"  alt="Mat Utter - Software Engineer" class="img-responsive"></a>
 		</div>
 
 		<div class="col-sm-8 ">
 			<div class="col-sm-12">
-				<p class="navbar-text navbar-right"> matutter4@gmail.com </p>
+				<p class="navbar-text navbar-right email"> matutter4@gmail.com </p>
 			</div>
 			<div class="col-sm-12">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Resume</a></li>
-					<li><a href="#">Portfolio</a></li>
+					<li><a id="a2">About</a></li>
+					<li><a id="r2">Resume</a></li>
+					<li><a id="p2">Portfolio</a></li>
 				</ul>
 			</div>
 		</div>
@@ -115,7 +115,7 @@
 		</div>
 		<div class="col-sm-6">
 			<div class="media">
-				<a class="pull-left" href="#">
+				<a class="pull-left">
 					<img class="media-object" src="c.png" data-src="holder.js/64x64">
 				</a>
 				<div class="media-body">
@@ -127,7 +127,7 @@
 			</div>
 
 			<div class="media">
-				<a class="pull-left" href="#">
+				<a class="pull-left">
 					<img class="media-object" src="cpp.jpg" data-src="holder.js/64x64">
 				</a>
 				<div class="media-body">
@@ -139,7 +139,7 @@
 			</div>
 
 			<div class="media">
-				<a class="pull-left" href="#">
+				<a class="pull-left">
 					<img class="media-object" src="js.jpg" data-src="holder.js/64x64">
 				</a>
 				<div class="media-body">
@@ -151,7 +151,7 @@
 			</div>
 
 			<div class="media">
-				<a class="pull-left" href="#">
+				<a class="pull-left">
 					<img class="media-object" src="nodejs.png" data-src="holder.js/64x64">
 				</a>
 				<div class="media-body">
@@ -163,7 +163,7 @@
 			</div>
 
 			<div class="media">
-				<a class="pull-left" href="#">
+				<a class="pull-left">
 					<img class="media-object" src="visualbasic.png" data-src="holder.js/64x64">
 				</a>
 				<div class="media-body">
@@ -178,7 +178,7 @@
 		<div class="col-sm-6"> 
 
 			<div class="media">
-				<a class="pull-left" href="#">
+				<a class="pull-left">
 					<img class="media-object" src="php5.jpg" data-src="holder.js/64x64">
 				</a>
 				<div class="media-body">
@@ -190,7 +190,7 @@
 			</div>
 
 			<div class="media">
-				<a class="pull-left" href="#">
+				<a class="pull-left">
 					<img class="media-object" src="jquery.png" data-src="holder.js/64x64">
 				</a>
 				<div class="media-body">
@@ -202,7 +202,7 @@
 			</div>
 
 			<div class="media">
-				<a class="pull-left" href="#">
+				<a class="pull-left">
 					<img class="media-object" src="java.jpg" data-src="holder.js/64x64">
 				</a>
 				<div class="media-body">
@@ -214,7 +214,7 @@
 			</div>
 
 			<div class="media">
-				<a class="pull-left" href="#">
+				<a class="pull-left">
 					<img class="media-object" src="assembly.png" data-src="holder.js/64x64">
 				</a>
 				<div class="media-body">
@@ -226,7 +226,7 @@
 			</div>
 
 			<div class="media">
-				<a class="pull-left" href="#">
+				<a class="pull-left">
 					<img class="media-object" src="ruby.png" data-src="holder.js/64x64">
 				</a>
 				<div class="media-body">
@@ -262,12 +262,37 @@
 
 <script>
 
+$(document).ready( function() {
+
+	var	scrollTop	= $(window).scrollTop(),
+    	a			= ($('#about').offset().top) - scrollTop,
+    	r			= ($('#resume').offset().top) - scrollTop,
+    	p			= ($('#portfolio').offset().top) - scrollTop;
 
 	$('a.links').click(function(){
 		$('img').removeClass('active');
 		$(this).children('img').addClass('active');
 	});
 
+	$('#a,#a2').click(function() {
+		$('html, body').animate({scrollTop:a}, 'slow');
+	});
+
+	$('#r,#r2').click(function() {
+		$('html, body').animate({scrollTop:r}, 'slow');
+	});
+
+	$('#p,#p2').click(function() {
+		$('html, body').animate({scrollTop:p}, 'slow');
+	});
+
+	$('.email').hover(function(){
+		$(this).prepend("WRITE THIS DOWN!!!");
+		$(this).unbind('mouseenter mouseleave');
+	});
+
+
+});
 
 
 </script>

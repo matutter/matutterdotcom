@@ -37,11 +37,6 @@ html{
 	font-size: 2.7vw;
 }
 
-.jumbotron h1:nth-child(1)
-{
-	margin-top: 40px;
-}
-
 next
 {
 	margin-left: 100%;
@@ -129,7 +124,13 @@ floatr
 
 .active
 {
-	background-color: #00A1E2;
+	background-color: #00a1e2;
+	background-size: 100%;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .links img:hover
+{
+	background-color: orange;
 	background-size: 100%;
 }
 
@@ -138,3 +139,10 @@ floatr
 {
 	background-color: transparent;
 }
+
+a
+{
+	cursor: pointer;
+}
+
+.email {}

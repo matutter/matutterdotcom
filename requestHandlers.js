@@ -1,5 +1,4 @@
 var fs  = require("fs");
-var formidable = require("formidable");
 
 function wake(response) {
 	console.log("\n**NEW CON");
