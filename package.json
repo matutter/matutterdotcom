@@ -4,7 +4,6 @@
   "description": "matutter.com node.js",
   "main": "web.js",
   "dependencies": {
-    "formidable": "~1.0.14"
   },
   "devDependencies": {},
   "scripts": {
@@ -15,6 +14,9 @@
     "type": "git",
     "url": "https://github.com:matutter/matutterdotcom.git"
   },
+  "engines": {
+	"node" : "0.10.24"
+  }
   "keywords": [
     "mat",
     "utter",
