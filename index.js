@@ -5,12 +5,12 @@ var requestHandlers= require("./requestHandlers");
 var handle = {}
 handle[""] 		= requestHandlers.wake;
 handle["wake"] 	= requestHandlers.wake;
-handle["css/bootstrap.min.css"] = requestHandlers.css;
-handle["css/main.css"]	= requestHandlers.css;
-handle["favicon.ico"]	= requestHandlers.favicon;
-handle["navbar.gif"]	= requestHandlers.gif;
-handle["css/header.jpg"]	= requestHandlers.jpg;
-handle["mat.png"]	= requestHandlers.png;
-handle["js/holder.js"]	= requestHandlers.js;
+handle[".css"]	= requestHandlers.css;
+handle[".ico"]	= requestHandlers.favicon;
+handle[".gif"]	= requestHandlers.gif;
+handle[".jpg"]	= requestHandlers.jpg;
+handle[".png"]	= requestHandlers.png;
+handle[".js"]	= requestHandlers.js;
+handle[".map"]	= requestHandlers.js;
 
 server.wake(router.route, handle);

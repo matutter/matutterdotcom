@@ -11,6 +11,8 @@ function wake(response) {
 }
 
 function css(response, request, path) {
+	path="css/"+path;
+
 	fs.readFile(path, function(err, css) {
 		response.writeHead(200, {"Content-Type":"text/css"});
 		response.write(css);
@@ -19,6 +21,9 @@ function css(response, request, path) {
 }
 
 function gif(response, request, path) {
+	var res = path.match(/css/g);
+	if(!res) path="css/"+path;
+
 	fs.readFile(path, function(err, gif) {
 		response.writeHead(200, {"Content-Type":"image/gif"});	
 		response.end(gif, 'binary');
@@ -26,14 +31,21 @@ function gif(response, request, path) {
 }
 
 function jpg(response, request, path) {
+	var res = path.match(/css/g);
+	if(!res) path="css/"+path;
+
 	fs.readFile(path, function(err, jpg) {
+		if(err) return;
 		response.writeHead(200, {"Content-Type":"image/jpg"});	
 		response.end(jpg, 'binary');
 	});
 }
 
 function png(response, request, path) {
-	fs.readFile('css/'+path, function(err, png) {
+	var res = path.match(/css/g);
+	if(!res) path="css/"+path;
+
+	fs.readFile(path, function(err, png) {
 		if(err) console.log("**404 - "+path);
 		response.writeHead(200, {"Content-Type":"image/png"});	
 		response.end(png, 'binary');
@@ -41,7 +53,10 @@ function png(response, request, path) {
 }
 
 function js(response, request, path) {
+	path = "js/"+path;
+
 	fs.readFile(path, function(err, js) {
+		if(err) return;
 		response.writeHead(200, {"Content-Type":"text/javascript"});	
 		response.end(js);
 	});
@@ -49,6 +64,7 @@ function js(response, request, path) {
 
 function favicon(response) {
 	fs.readFile('favicon.ico', function(err, ico) {
+		if(err) return;
 		response.writeHead(200, {"Content-Type":"image/ico"});	
 		response.end(ico, 'binary');
 	});
