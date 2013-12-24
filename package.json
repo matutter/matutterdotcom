@@ -16,7 +16,7 @@
   },
   "engines": {
 	"node" : "0.10.24"
-  }
+  },
   "keywords": [
     "mat",
     "utter",
