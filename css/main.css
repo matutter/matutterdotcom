@@ -1,7 +1,7 @@
 html{
 	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 80px;
 }
-
 
 .navbar
 {
@@ -112,13 +112,8 @@ floatr
 
 .in-40
 {
-	margin-left:40px;
-}
-
-.out-40
-{
-	position: fixed;
-	margin-left:-40px;
+	margin-left:20px;
+	padding-left: 0px;
 	z-index: 0;
 }
 
@@ -134,11 +129,12 @@ floatr
 	background-size: 100%;
 }
 
-.links{}
-.clear
+.navbar-default .navbar-nav>li
 {
-	background-color: transparent;
+	width: 33.3333%;
 }
+
+.links{}
 
 a
 {
@@ -146,3 +142,34 @@ a
 }
 
 .email {}
+
+.top-nav
+{
+	color: orange;
+	text-align: center;
+	width: 50px;
+	height: 35px;
+}
+
+.fright
+{
+	margin-right: -40px;
+	float: right;
+	height: auto;
+	clear: right;
+}
+
+.links-container
+{
+	z-index: 10;
+	left: 14%;
+	
+	margin-top: 0;
+}
+
+.connect a, i
+{
+	margin-left: 5px;
+}
+
+
