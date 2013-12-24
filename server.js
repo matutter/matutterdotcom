@@ -10,7 +10,7 @@ function wake(route, handle) {
 		route(handle, pathname, response, request);
 }
 
-http.createServer(onRequest).listen(8888);
+http.createServer(onRequest).listen(process.env.PORT || 8888);
 console.log("Server "+status);
 }
 
