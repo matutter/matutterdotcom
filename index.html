@@ -286,45 +286,26 @@
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"> </script>
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css">
 <script>
-
 $(document).ready( function() {
+	var	scrollTop	= $(window).scrollTop();
+	var offset  = {}
+    	offset["a"] = ($('#about').offset().top) - scrollTop;
+    	offset["r"] = ($('#resume').offset().top) - scrollTop;
+    	offset["p"] = ($('#portfolio').offset().top) - scrollTop;
+    	offset["up"]= 0;
 
-	var	scrollTop	= $(window).scrollTop(),
-    	a			= ($('#about').offset().top) - scrollTop,
-    	r			= ($('#resume').offset().top) - scrollTop,
-    	p			= ($('#portfolio').offset().top) - scrollTop;
-
-	$('a.links').click(function(){
-		$('img, i.top-nav').removeClass('active');
-		$(this).children('img, i').addClass('active');
-	});
-
-	$('#up').click(function(){
-		$('html, body').animate({scrollTop:0}, 'slow');
-	});
-
-	$('#a,#a2').click(function() {
-		$('html, body').animate({scrollTop:a}, 'slow');
-	});
-
-	$('#r,#r2').click(function() {
-		$('html, body').animate({scrollTop:r}, 'slow');
-	});
-
-	$('#p,#p2').click(function() {
-		$('html, body').animate({scrollTop:p}, 'slow');
-	});
+	$('#a,#a2,#r,#r2,#p,#p2,#up').click(function(){
+		var key = $(this).attr("id").replace("2","");
+		if(typeof offset[key] === "number"){
+			$('html, body').animate({scrollTop:offset[key]}, 'slow');
+			$('img, i.top-nav').removeClass('active');
+			$('img#'+key+',i#'+key).addClass('active');
+		}
+	});	
 
 	$('.email').hover(function(){
-		$(this).prepend('<i class="fa fa-asterisk"></i>');
+		$(this).prepend('<i class="fa fa-asterisk" style="color:orange;"></i>');
 		$(this).unbind('mouseenter mouseleave');
 	});
-
-	//$(window).scroll(function () {
-    	//$(".links-container").css("margin-top",$(this).scrollTop());
-    	//$(".links-container").animate({"margin-top": $(this).scrollTop()},10);
-	//});
 });
-
-
 </script>

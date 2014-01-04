@@ -15,6 +15,12 @@ html{
 	color: #000;
 	overflow: hidden;
 }
+
+.navbar-brand
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
 .jumbotron
 {
 	background-image:url('header.jpg');
