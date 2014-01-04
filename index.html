@@ -53,15 +53,15 @@
 		<h1><orange>about <i class="fa fa-info-circle"></i> </orange></h1>
 	</div>
 	<div class="col-sm-8">
-		<p> I'm currently a CS student at SUNYIT Utica. I currently work for the school as a Computer Science tutor also, I hold an intern position at Terahertz Technologies Inc. programming for embedded devices. </p>
+		<p> I'm currently a CS student at SUNYIT Utica. I currently work for the school as a Computer Science tutor, also I hold an intern position at Terahertz Technologies Inc. programming for embedded devices. </p>
 
 		<p> I write a lot of C and C++ for courses and work. I use my <a>GitHub</a> to host code I use for tutoring. </p>
 
 		<p> My personal projects vary, recently I've been working on a lot of front & back-end web code. This website is written on Node.js. I also have experience with Apache on multiple platforms, Windows IIS, and RoR.</p> 
 
-		<p> I also write low-level programs and drivers for my RasberryPi </p>
+		<p> I also write low-level programs and drivers for my RaspberryPi </p>
 
-		<p> With my current employment and future arrangements I'll be looking for a full-time development position in August of 2014. </p> 
+		<p> With my current employment and future arrangements I'll be looking for a full-time developer position in August of 2014. </p> 
 	</div>
 	<div id="contact" class="col-sm-4">
 		<div class="page-header">
@@ -92,7 +92,7 @@
 			<div class="page-header">
 				<h3>Career Goal</h3>
 			</div>		
-				<p>Seeking a full-time software development position ranging from embedded systems to enterprise software. </p> 
+				<p>Seeking a full-time software developer position ranging from embedded systems to enterprise software. </p> 
 
 			<div class="page-header">
 				<h3>EDUCATION</h3>
@@ -121,7 +121,7 @@
 				<p>
 					SUNYIT Learning Center &#38; ACCES-VR Utica, NY<floatr> June 2013 < Present </floatr>
 					<li> Tutor for Computer Science curriculum </li>
-					<li> Private tutoring for Finite Math &#38; all CS courses </li>
+					<li> Private tutor for Finite Math &#38; all CS courses </li>
 				</p>
 
 				<p>
@@ -316,14 +316,14 @@ $(document).ready( function() {
 	});
 
 	$('.email').hover(function(){
-		$(this).prepend("WRITE THIS DOWN!!!");
+		$(this).prepend('<i class="fa fa-asterisk"></i>');
 		$(this).unbind('mouseenter mouseleave');
 	});
 
-	$(window).scroll(function (event) {
+	//$(window).scroll(function () {
     	//$(".links-container").css("margin-top",$(this).scrollTop());
-    	$(".links-container").animate({"margin-top": $(this).scrollTop()},10);
-	});
+    	//$(".links-container").animate({"margin-top": $(this).scrollTop()},10);
+	//});
 });
 
 

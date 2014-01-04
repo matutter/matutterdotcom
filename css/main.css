@@ -110,12 +110,7 @@ floatr
     width: 100%;
 }
 
-.in-40
-{
-	margin-left:20px;
-	padding-left: 0px;
-	z-index: 0;
-}
+
 
 .active
 {
@@ -161,10 +156,18 @@ a
 
 .links-container
 {
-	z-index: 10;
-	left: 14%;
-	
+	position: fixed;
+	left: calc(16.66666666666% - 10px);
 	margin-top: 0;
+	z-index: 0;
+}
+
+.in-40
+{
+	position: absolute;
+	left: calc(16.66666666666% + 40px);
+	padding: 0px;
+	z-index: 10;
 }
 
 .connect a, i

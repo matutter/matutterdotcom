@@ -12,5 +12,6 @@ handle[".jpg"]	= requestHandlers.jpg;
 handle[".png"]	= requestHandlers.png;
 handle[".js"]	= requestHandlers.js;
 handle[".map"]	= requestHandlers.js;
+handle["message"]=requestHandlers.email;
 
 server.wake(router.route, handle);

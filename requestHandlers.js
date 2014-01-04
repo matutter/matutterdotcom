@@ -69,6 +69,12 @@ function favicon(response) {
 	});
 }
 
+function email(response) {
+	//response.writeHead(200, {"Content-Type": "text/plain"});
+	response.write("message time");
+	response.end();
+}
+
 exports.wake = wake;
 exports.css = css;
 exports.gif = gif;
@@ -76,3 +82,4 @@ exports.jpg	= jpg;
 exports.png	= png;
 exports.js	= js;
 exports.favicon = favicon;
+exports.email	= email;
