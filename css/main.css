@@ -182,3 +182,14 @@ a
 }
 
 
+@media only screen and   (max-device-width : 1024px) {
+	.links-container
+	{
+		left: 0px !important;
+	}
+	.in-40, nav .navbar
+	{
+		width: 90% !important;
+		left:60px;
+	}
+}
